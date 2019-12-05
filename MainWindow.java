@@ -29,13 +29,11 @@ public class MainWindow extends JFrame
 	
 	MainWindow(String name, Primes p)
 	{
-		//instantiate main window and set layout and background
 	      JDialog main = new JDialog(this, name);
 	      GridBagLayout gridLayout = new GridBagLayout();
 	      main.getContentPane().setBackground(new Color(52, 0, 0));
 	      main.getContentPane().setLayout(gridLayout);
 	      
-	      //gridbagconstraints for the window
 	      GridBagConstraints mgbcDialog = new GridBagConstraints();
 	      mgbcDialog.fill = GridBagConstraints.HORIZONTAL;
 	      mgbcDialog.anchor = GridBagConstraints.WEST;
@@ -43,8 +41,7 @@ public class MainWindow extends JFrame
 	      mgbcDialog.weightx = .5;
 	      mgbcDialog.gridx = 0;
 	      mgbcDialog.gridy = 0;
-	      
-	      //gridbagconstraints for the panels to add to the window
+	  
 	      GridBagConstraints mgbcPanel1 = new GridBagConstraints();
 	      mgbcPanel1.fill = GridBagConstraints.HORIZONTAL;
 	      mgbcPanel1.anchor = GridBagConstraints.WEST;
